@@ -18,8 +18,15 @@ client.on("messageCreate", (message) => {
     message.reply({ content: "pong!!!" });
   }
   if (message.content === "pong") {
-    message.reply({ content: "f u doner!" });
+    message.reply({ content: "Doner is the greatest AMEN" });
   }
+  if (message.content === "thimly") {
+    message.reply({ content: "flash!" });
+  }
+  if (message.content === "hamada?") {
+    message.reply({ content: "lwiki" });
+  }
+  
 });
 
 client.login(token);
