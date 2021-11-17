@@ -4,7 +4,8 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "tsc": "tsc -w --skipLibCheck"
   },
   "dependencies": {
     "consola": "^2.15.3",
