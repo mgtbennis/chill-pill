@@ -18,6 +18,9 @@ client.on("messageCreate", (message) => {
     if (message.content === "ping") {
         message.reply({ content: "pong!!!" });
     }
+    if (message.content === "pong") {
+        message.reply({ content: "f u doner!" });
+    }
 });
 client.login(token);
 //# sourceMappingURL=index.js.map
