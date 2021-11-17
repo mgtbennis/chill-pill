@@ -10,13 +10,13 @@ dotenv_1.default.config();
 const client = new discord_js_1.Client({
     intents: [discord_js_1.Intents.FLAGS.GUILDS, discord_js_1.Intents.FLAGS.GUILD_MESSAGES],
 });
-const token = process.env["token"];
+const token = process.env["TOKEN"];
 client.on("ready", () => {
     consola_1.default.success("Client is ready!");
 });
 client.on("messageCreate", (message) => {
     if (message.content === "ping") {
-        message.reply({ content: "pong!" });
+        message.reply({ content: "pong!!!" });
     }
 });
 client.login(token);
